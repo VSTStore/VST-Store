@@ -1,0 +1,4 @@
+**Пароль и логин админа**
+
+Email   : admin@mail.com
+Password: Password@123
