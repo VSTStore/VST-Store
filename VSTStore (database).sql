@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 07 2024 г., 13:00
+-- Время создания: Июн 19 2024 г., 07:27
 -- Версия сервера: 8.0.30
 -- Версия PHP: 7.4.30
 
@@ -20,268 +20,6 @@ SET time_zone = "+00:00";
 --
 -- База данных: `VSTStore`
 --
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `tbl_country`
---
-
-CREATE TABLE `tbl_country` (
-  `country_id` int NOT NULL,
-  `country_name` varchar(100) NOT NULL DEFAULT ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
-
---
--- Дамп данных таблицы `tbl_country`
---
-
-INSERT INTO `tbl_country` (`country_id`, `country_name`) VALUES
-(1, 'Afghanistan'),
-(2, 'Albania'),
-(3, 'Algeria'),
-(4, 'American Samoa'),
-(5, 'Andorra'),
-(6, 'Angola'),
-(7, 'Anguilla'),
-(8, 'Antarctica'),
-(9, 'Antigua and Barbuda'),
-(10, 'Argentina'),
-(11, 'Armenia'),
-(12, 'Aruba'),
-(13, 'Australia'),
-(14, 'Austria'),
-(15, 'Azerbaijan'),
-(16, 'Bahamas'),
-(17, 'Bahrain'),
-(18, 'Bangladesh'),
-(19, 'Barbados'),
-(20, 'Belarus'),
-(21, 'Belgium'),
-(22, 'Belize'),
-(23, 'Benin'),
-(24, 'Bermuda'),
-(25, 'Bhutan'),
-(26, 'Bolivia'),
-(27, 'Bosnia and Herzegovina'),
-(28, 'Botswana'),
-(29, 'Bouvet Island'),
-(30, 'Brazil'),
-(31, 'British Indian Ocean Territory'),
-(32, 'Brunei Darussalam'),
-(33, 'Bulgaria'),
-(34, 'Burkina Faso'),
-(35, 'Burundi'),
-(36, 'Cambodia'),
-(37, 'Cameroon'),
-(38, 'Canada'),
-(39, 'Cape Verde'),
-(40, 'Cayman Islands'),
-(41, 'Central African Republic'),
-(42, 'Chad'),
-(43, 'Chile'),
-(44, 'China'),
-(45, 'Christmas Island'),
-(46, 'Cocos (Keeling) Islands'),
-(47, 'Colombia'),
-(48, 'Comoros'),
-(49, 'Congo'),
-(50, 'Cook Islands'),
-(51, 'Costa Rica'),
-(52, 'Croatia (Hrvatska)'),
-(53, 'Cuba'),
-(54, 'Cyprus'),
-(55, 'Czech Republic'),
-(56, 'Denmark'),
-(57, 'Djibouti'),
-(58, 'Dominica'),
-(59, 'Dominican Republic'),
-(60, 'East Timor'),
-(61, 'Ecuador'),
-(62, 'Egypt'),
-(63, 'El Salvador'),
-(64, 'Equatorial Guinea'),
-(65, 'Eritrea'),
-(66, 'Estonia'),
-(67, 'Ethiopia'),
-(68, 'Falkland Islands (Malvinas)'),
-(69, 'Faroe Islands'),
-(70, 'Fiji'),
-(71, 'Finland'),
-(72, 'France'),
-(73, 'France, Metropolitan'),
-(74, 'French Guiana'),
-(75, 'French Polynesia'),
-(76, 'French Southern Territories'),
-(77, 'Gabon'),
-(78, 'Gambia'),
-(79, 'Georgia'),
-(80, 'Germany'),
-(81, 'Ghana'),
-(82, 'Gibraltar'),
-(83, 'Guernsey'),
-(84, 'Greece'),
-(85, 'Greenland'),
-(86, 'Grenada'),
-(87, 'Guadeloupe'),
-(88, 'Guam'),
-(89, 'Guatemala'),
-(90, 'Guinea'),
-(91, 'Guinea-Bissau'),
-(92, 'Guyana'),
-(93, 'Haiti'),
-(94, 'Heard and Mc Donald Islands'),
-(95, 'Honduras'),
-(96, 'Hong Kong'),
-(97, 'Hungary'),
-(98, 'Iceland'),
-(99, 'India'),
-(100, 'Isle of Man'),
-(101, 'Indonesia'),
-(102, 'Iran (Islamic Republic of)'),
-(103, 'Iraq'),
-(104, 'Ireland'),
-(105, 'Israel'),
-(106, 'Italy'),
-(107, 'Ivory Coast'),
-(108, 'Jersey'),
-(109, 'Jamaica'),
-(110, 'Japan'),
-(111, 'Jordan'),
-(112, 'Kazakhstan'),
-(113, 'Kenya'),
-(114, 'Kiribati'),
-(115, 'Korea, Democratic People\'s Republic of'),
-(116, 'Korea, Republic of'),
-(117, 'Kosovo'),
-(118, 'Kuwait'),
-(119, 'Kyrgyzstan'),
-(120, 'Lao People\'s Democratic Republic'),
-(121, 'Latvia'),
-(122, 'Lebanon'),
-(123, 'Lesotho'),
-(124, 'Liberia'),
-(125, 'Libyan Arab Jamahiriya'),
-(126, 'Liechtenstein'),
-(127, 'Lithuania'),
-(128, 'Luxembourg'),
-(129, 'Macau'),
-(130, 'Macedonia'),
-(131, 'Madagascar'),
-(132, 'Malawi'),
-(133, 'Malaysia'),
-(134, 'Maldives'),
-(135, 'Mali'),
-(136, 'Malta'),
-(137, 'Marshall Islands'),
-(138, 'Martinique'),
-(139, 'Mauritania'),
-(140, 'Mauritius'),
-(141, 'Mayotte'),
-(142, 'Mexico'),
-(143, 'Micronesia, Federated States of'),
-(144, 'Moldova, Republic of'),
-(145, 'Monaco'),
-(146, 'Mongolia'),
-(147, 'Montenegro'),
-(148, 'Montserrat'),
-(149, 'Morocco'),
-(150, 'Mozambique'),
-(151, 'Myanmar'),
-(152, 'Namibia'),
-(153, 'Nauru'),
-(154, 'Nepal'),
-(155, 'Netherlands'),
-(156, 'Netherlands Antilles'),
-(157, 'New Caledonia'),
-(158, 'New Zealand'),
-(159, 'Nicaragua'),
-(160, 'Niger'),
-(161, 'Nigeria'),
-(162, 'Niue'),
-(163, 'Norfolk Island'),
-(164, 'Northern Mariana Islands'),
-(165, 'Norway'),
-(166, 'Oman'),
-(167, 'Pakistan'),
-(168, 'Palau'),
-(169, 'Palestine'),
-(170, 'Panama'),
-(171, 'Papua New Guinea'),
-(172, 'Paraguay'),
-(173, 'Peru'),
-(174, 'Philippines'),
-(175, 'Pitcairn'),
-(176, 'Poland'),
-(177, 'Portugal'),
-(178, 'Puerto Rico'),
-(179, 'Qatar'),
-(180, 'Reunion'),
-(181, 'Romania'),
-(182, 'Russian Federation'),
-(183, 'Rwanda'),
-(184, 'Saint Kitts and Nevis'),
-(185, 'Saint Lucia'),
-(186, 'Saint Vincent and the Grenadines'),
-(187, 'Samoa'),
-(188, 'San Marino'),
-(189, 'Sao Tome and Principe'),
-(190, 'Saudi Arabia'),
-(191, 'Senegal'),
-(192, 'Serbia'),
-(193, 'Seychelles'),
-(194, 'Sierra Leone'),
-(195, 'Singapore'),
-(196, 'Slovakia'),
-(197, 'Slovenia'),
-(198, 'Solomon Islands'),
-(199, 'Somalia'),
-(200, 'South Africa'),
-(201, 'South Georgia South Sandwich Islands'),
-(202, 'Spain'),
-(203, 'Sri Lanka'),
-(204, 'St. Helena'),
-(205, 'St. Pierre and Miquelon'),
-(206, 'Sudan'),
-(207, 'Suriname'),
-(208, 'Svalbard and Jan Mayen Islands'),
-(209, 'Swaziland'),
-(210, 'Sweden'),
-(211, 'Switzerland'),
-(212, 'Syrian Arab Republic'),
-(213, 'Taiwan'),
-(214, 'Tajikistan'),
-(215, 'Tanzania, United Republic of'),
-(216, 'Thailand'),
-(217, 'Togo'),
-(218, 'Tokelau'),
-(219, 'Tonga'),
-(220, 'Trinidad and Tobago'),
-(221, 'Tunisia'),
-(222, 'Turkey'),
-(223, 'Turkmenistan'),
-(224, 'Turks and Caicos Islands'),
-(225, 'Tuvalu'),
-(226, 'Uganda'),
-(227, 'Ukraine'),
-(228, 'United Arab Emirates'),
-(229, 'United Kingdom'),
-(230, 'United States'),
-(231, 'United States minor outlying islands'),
-(232, 'Uruguay'),
-(233, 'Uzbekistan'),
-(234, 'Vanuatu'),
-(235, 'Vatican City State'),
-(236, 'Venezuela'),
-(237, 'Vietnam'),
-(238, 'Virgin Islands (British)'),
-(239, 'Virgin Islands (U.S.)'),
-(240, 'Wallis and Futuna Islands'),
-(241, 'Western Sahara'),
-(242, 'Yemen'),
-(243, 'Zaire'),
-(244, 'Zambia'),
-(245, 'Zimbabwe');
 
 -- --------------------------------------------------------
 
@@ -631,7 +369,12 @@ INSERT INTO `tbl_order` (`id`, `p_id`, `p_name`, `quantity`, `unit_price`, `paym
 (14, 99, 'Action Delay', '2', '29', '7588404442'),
 (15, 83, 'Ultimate FireSonic Bundle', '1', '199', '2396014310'),
 (16, 86, 'Dynamic Delay', '7', '19', '9761773149'),
-(17, 85, 'OSL Multi Chorus', '1', '35', '4867657858');
+(17, 85, 'OSL Multi Chorus', '1', '35', '4867657858'),
+(18, 85, 'OSL Multi Chorus', '1', '3900', '1308979250'),
+(19, 104, 'miniVerb', '1', '123', '1761406917'),
+(20, 85, 'OSL Multi Chorus', '1', '3900', '2925953825'),
+(21, 83, 'Ultimate FireSonic Bundle', '1', '32500', '2925953825'),
+(22, 84, 'SpeakerSim', '2', '7000', '3400379371');
 
 -- --------------------------------------------------------
 
@@ -709,11 +452,16 @@ INSERT INTO `tbl_payment` (`id`, `customer_id`, `customer_name`, `customer_email
 (54, 6, 'August F. Freels', 'august@mail.com', '2022-03-20 10:59:34', 70, 'Completed', '1647799174', ''),
 (55, 10, 'Will Williams', 'williams@mail.com', '2022-03-20 11:28:22', 149, 'Completed', '1647800902', 'Download.com/1'),
 (58, 13, 'sdfsf', 'adminklkl@mail.com', '2024-06-07 02:16:30', 366, 'Успешно', '7133174605', '-'),
-(59, 13, 'sdfsf', 'adminklkl@mail.com', '2024-06-07 02:41:26', 218, 'Успешно', '4737776463', 'Download.com'),
+(59, 13, 'sdfsf', 'adminklkl@mail.com', '2024-06-07 02:41:26', 218, 'Успешно', '4737776463', 'https://cloud.mail.ru/public/j6u7/8t5jXWxGy'),
 (60, 18, 'Dmitry', 'vststore@bk.ru', '2024-06-07 05:15:13', 198, 'Успешно', '7588404442', ''),
 (61, 13, 'sdfsf', 'adminklkl@mail.com', '2024-06-07 07:56:38', 199, 'Успешно', '2396014310', ''),
-(62, 17, 'dmitriy', 'savarovskiy.dima@gmail.com', '2024-06-07 11:13:20', 133, 'Успешно', '9761773149', ''),
-(63, 16, 'erergve', 'ervref@gmail.ru', '2024-06-07 11:19:34', 35, 'Успешно', '4867657858', 'eferf');
+(62, 17, 'dmitriy', 'savarovskiy.dima@gmail.com', '2024-06-07 11:13:20', 133, 'Успешно', '9761773149', 'https://cloud.mail.ru/public/5Hbw/fG8rZAy1b'),
+(63, 16, 'erergve', 'ervref@gmail.ru', '2024-06-07 11:19:34', 35, 'Успешно', '4867657858', 'eferf'),
+(64, 16, 'erergve', 'ervref@gmail.ru', '2024-06-07 14:28:50', 3900, 'Успешно', '1308979250', ''),
+(65, 16, 'erergve', 'ervref@gmail.ru', '2024-06-07 14:36:34', 123, 'Успешно', '1761406917', ''),
+(66, 16, 'erergve', 'ervref@gmail.ru', '2024-06-07 14:37:23', 123, 'Успешно', '4811250803', ''),
+(67, 17, 'dmitriy', 'savarovskiy.dima@gmail.com', '2024-06-08 10:54:46', 36400, 'Успешно', '2925953825', 'https://cloud.mail.ru/public/j6u7/8t5jXWxGy'),
+(68, 17, 'dmitriy', 'savarovskiy.dima@gmail.com', '2024-06-10 22:32:01', 14000, 'Успешно', '3400379371', '');
 
 -- --------------------------------------------------------
 
@@ -742,43 +490,6 @@ INSERT INTO `tbl_photo` (`id`, `caption`, `photo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `tbl_post`
---
-
-CREATE TABLE `tbl_post` (
-  `post_id` int NOT NULL,
-  `post_title` varchar(255) NOT NULL,
-  `post_slug` varchar(255) NOT NULL,
-  `post_content` text NOT NULL,
-  `post_date` varchar(255) NOT NULL,
-  `photo` varchar(255) NOT NULL,
-  `category_id` int NOT NULL,
-  `total_view` int NOT NULL,
-  `meta_title` varchar(255) NOT NULL,
-  `meta_keyword` text NOT NULL,
-  `meta_description` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Дамп данных таблицы `tbl_post`
---
-
-INSERT INTO `tbl_post` (`post_id`, `post_title`, `post_slug`, `post_content`, `post_date`, `photo`, `category_id`, `total_view`, `meta_title`, `meta_keyword`, `meta_description`) VALUES
-(1, 'Cu vel choro exerci pri et oratio iisque', 'cu-vel-choro-exerci-pri-et-oratio-iisque', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-1.jpg', 3, 14, 'Cu vel choro exerci pri et oratio iisque', '', ''),
-(2, 'Epicurei necessitatibus eu facilisi postulant ', 'epicurei-necessitatibus-eu-facilisi-postulant-', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-2.jpg', 3, 6, 'Epicurei necessitatibus eu facilisi postulant ', '', ''),
-(3, 'Mei ut errem legimus periculis eos liber', 'mei-ut-errem-legimus-periculis-eos-liber', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-3.jpg', 3, 1, 'Mei ut errem legimus periculis eos liber', '', ''),
-(4, 'Id pro unum pertinax oportere vel', 'id-pro-unum-pertinax-oportere-vel', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-4.jpg', 4, 0, 'Id pro unum pertinax oportere vel', '', ''),
-(5, 'Tollit cetero cu usu etiam evertitur', 'tollit-cetero-cu-usu-etiam-evertitur', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-5.jpg', 4, 24, 'Tollit cetero cu usu etiam evertitur', '', ''),
-(6, 'Omnes ornatus qui et te aeterno', 'omnes-ornatus-qui-et-te-aeterno', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-6.jpg', 4, 2, 'Omnes ornatus qui et te aeterno', '', ''),
-(7, 'Vix tale noluisse voluptua ad ne', 'vix-tale-noluisse-voluptua-ad-ne', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-7.jpg', 2, 0, 'Vix tale noluisse voluptua ad ne', '', ''),
-(8, 'Liber utroque vim an ne his brute', 'liber-utroque-vim-an-ne-his-brute', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-8.jpg', 2, 12, 'Liber utroque vim an ne his brute', '', ''),
-(9, 'Nostrum copiosae argumentum has', 'nostrum-copiosae-argumentum-has', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-9.jpg', 1, 12, 'Nostrum copiosae argumentum has', '', ''),
-(10, 'An labores explicari qui eu', 'an-labores-explicari-qui-eu', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-10.jpg', 1, 4, 'An labores explicari qui eu', '', ''),
-(11, 'Lorem ipsum dolor sit amet', 'lorem-ipsum-dolor-sit-amet', '<p>Lorem ipsum dolor sit amet, qui case probo velit no, an postea scaevola partiendo mei. Id mea fuisset perpetua referrentur. Ut everti ceteros mei, alii discere eum no, duo id malis iuvaret. Ad sint everti accusam vel, ea viderer suscipiantur pri. Brute option minimum in cum, ignota iuvaret an pro.</p>\r\n\r\n<p>Solum atqui intellegebat mea an. Ne ius alterum aliquam. Ea nec populo aliquid mentitum, vis in meliore atomorum, sanctus consequat vituperatoribus duo ea. Ad doctus pertinacia ius, virtute fuisset id has, eum ut modo principes. Qui eu labore adversarium, oporteat delicata qui ut, an qui meliore principes. Id aliquid dolorum nam.</p>\r\n\r\n<p>Reque pericula philosophia ut mei, volumus eligendi mandamus has an. In nobis consulatu pri, has at timeam scaevola, has simul quaeque et. Te nec sale accumsan. Dolorem prodesset efficiendi sea ea.</p>\r\n\r\n<p>Et habeo modus debitis pri, vel quis fierent albucius ne. Ea animal meliore usu, nec etiam dolorum atomorum at, nam in audire mandamus omittantur. Cu ius dicam officiis molestiae, mea volumus officiis cotidieque no. Ut vel possim interpretaris, idque probatus antiopam has ad. Facilisi qualisque te sea, no dolorum mnesarchum usu.</p>\r\n\r\n<p>Eum tota graeci impetus an, eirmod invenire rationibus ne mel. Ignota habemus eum ex, vis omnesque delicata perpetua an. Sit id modo invidunt sapientem, ne eum vocibus dolores phaedrum. Case praesent appellantur eu per.</p>\r\n', '05-09-2017', 'news-11.jpg', 1, 18, 'Lorem ipsum dolor sit amet', '', '');
-
--- --------------------------------------------------------
-
---
 -- Структура таблицы `tbl_product`
 --
 
@@ -803,9 +514,9 @@ CREATE TABLE `tbl_product` (
 --
 
 INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `p_qty`, `p_featured_photo`, `p_description`, `p_short_description`, `p_system_require`, `p_total_view`, `p_is_featured`, `p_is_active`, `ecat_id`) VALUES
-(83, 'Ultimate FireSonic Bundle', '40360', '32500', 7, '4.jpg', '<p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\"></span></p><p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\">FireSonic — разработчик средств расширения номер один для UnitedPlugins. Они любят разрабатывать умные и простые в использовании инструменты, которые можно использовать в любом треке, чтобы он звучал лучше! Обычно вам нужно настроить всего одну ручку, чтобы услышать значительное улучшение ваших треков. Независимо от того, нужно ли вам настроить бас, гитару, вокал, ударные или мастер-трек, эти инструменты помогут вам достичь цели за несколько секунд. В комплект входят FireCobra, интеллектуальный усилитель звука, FirePresser, блендер с четырьмя классическими компрессорами, FireMaster, идеальный финишер и FireCharger — активатор трека.</span></p>', '<p><span style=\"color: rgb(15, 17, 17); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: 14px;\">United Plugins собрали пакет FIRE. 4 плагина за небольшую цену. Содержит FireCobra, интеллектуальный усилитель звука, FirePresser, блендер с четырьмя классическими компрессорами, FireMaster, идеальный финишер и FireCharger — активатор трека.</span><br></p>', '<p><span style=\"color: rgb(15, 17, 17); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: 14px;\">Windows: 8/10/11 64 Bit Intel/AMD Processor with SSE2 support\r\nMac: MacOs 10.10+ Intel/AMD/M1 Processor with SSE2 support</span><br></p>', 34, 0, 1, 2),
-(84, 'SpeakerSim', '8000', '7000', 26, '6.jpg', ' <span style=\"color: rgb(51, 51, 51); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: small;\">Этот процессор можно использовать для следующих целей: проверка вашего микса на различных мониторных системах, музыкальная продукция, аудиопост-продукция телепередач или фильмов. <br>ХАРАКТЕРИСТИКИ ПРОДУКТА <br>Волшебный и быстрый DSP-движок NoiseAsh Упрощенное управление, множество творческих возможностей. <br>Блок искажений Lo-Fi. <br>Встроенный интеллектуальный ограничитель. <br>3-полосный твердотельный эквалайзер (Low Shelf – Mid – High Shelf) <br>Аналоговые фильтры низкого и высокого давления <br>18 уникальных механизмов моделирования динамиков. <br>3 типа Мегафона (Мегафон), Старый компьютер, Мобильный телефон, Винтажный телефон.</span>', '<p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\">SpeakerSim представляет собой реалистичную эмуляцию различных типов динамиков с собственной акустикой и окружением. Этот плагин поможет вам проверить ваш микс в различных системах мониторов, музыкальных произведениях, аудиопост-продукции для телепередач или фильмов.</span></p>', '<p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\">macOS Included: VST3, AU, AAX plug-in versions (64-bit only)\r\nmacOS 10.9.5 or above\r\nVST3 / AU / AAX host\r\nIntel I3 2ghz or above – Native Apple Silicon is also supported\r\n4 GB RAM / 2 GB free space on the system drive\r\nMin. 1024×768 Screen Resolution\r\nAbility to download<br>\r\nWindows Included: VST3, AAX plug-in versions (64-bit only)\r\nWindows 7 64-bit or above\r\nVST3 / AAX host\r\nIntel I3 2ghz / AMD Athlon 64 X2 or above\r\n4 GB RAM / 2 GB free space on the system drive\r\nMin. 1024×768 Screen Resolution\r\nAbility to download</span></p>', 52, 1, 1, 4),
-(85, 'OSL Multi Chorus', '4800', '3900', 32, '3.jpg', '<p><span style=\"color: rgb(51, 51, 51); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: small;\">OSL Multi Chorus — это цифровой эффект, вдохновленный топологией четырех знаковых модулей модуляции. Помимо записи звука оригинального OSL Chorus, этот плагин включает в себя три новых режима, каждый из которых имеет свой характер звука. Каждый режим полностью редактируем, что позволяет создавать эффекты от едва уловимых до экстремальных. Изучите заводские пресеты или настройте свой собственный припев, чтобы мгновенно добавить толщину и ширину любому источнику, включая гитары, ударные, бас, вокал и синтезаторы.</span><br></p>', '<p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\">OSL Multi Chorus — это цифровой эффект, вдохновленный топологией четырех знаковых модулей модуляции. 4 режима хоруса, расширение стереобазы и середины и многое другое.</span></p>', '<p><span style=\"margin: 0px; padding: 0px; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;\"></span><span style=\"margin: 0px; padding: 0px; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;\"></span><span style=\"margin: 0px; padding: 0px; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;\"> Windows 8–11 – Форматы плагинов: 64-битный VST3. OS X 10.11–macOS 14 — Форматы плагинов: 64-битный VST3/AU (собственный Arm64/M1)</span><br></p>', 98, 0, 1, 1),
+(83, 'Ultimate FireSonic Bundle', '40360', '32500', 7, '4.jpg', '<p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\"></span></p><p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\">FireSonic — разработчик средств расширения номер один для UnitedPlugins. Они любят разрабатывать умные и простые в использовании инструменты, которые можно использовать в любом треке, чтобы он звучал лучше! Обычно вам нужно настроить всего одну ручку, чтобы услышать значительное улучшение ваших треков. Независимо от того, нужно ли вам настроить бас, гитару, вокал, ударные или мастер-трек, эти инструменты помогут вам достичь цели за несколько секунд. В комплект входят FireCobra, интеллектуальный усилитель звука, FirePresser, блендер с четырьмя классическими компрессорами, FireMaster, идеальный финишер и FireCharger — активатор трека.</span></p>', '<p><span style=\"color: rgb(15, 17, 17); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: 14px;\">United Plugins собрали пакет FIRE. 4 плагина за небольшую цену. Содержит FireCobra, интеллектуальный усилитель звука, FirePresser, блендер с четырьмя классическими компрессорами, FireMaster, идеальный финишер и FireCharger — активатор трека.</span><br></p>', '<p><span style=\"color: rgb(15, 17, 17); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: 14px;\">Windows: 8/10/11 64 Bit Intel/AMD Processor with SSE2 support\r\nMac: MacOs 10.10+ Intel/AMD/M1 Processor with SSE2 support</span><br></p>', 37, 0, 1, 2),
+(84, 'SpeakerSim', '8000', '7000', 26, '6.jpg', ' <span style=\"color: rgb(51, 51, 51); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: small;\">Этот процессор можно использовать для следующих целей: проверка вашего микса на различных мониторных системах, музыкальная продукция, аудиопост-продукция телепередач или фильмов. <br>ХАРАКТЕРИСТИКИ ПРОДУКТА <br>Волшебный и быстрый DSP-движок NoiseAsh Упрощенное управление, множество творческих возможностей. <br>Блок искажений Lo-Fi. <br>Встроенный интеллектуальный ограничитель. <br>3-полосный твердотельный эквалайзер (Low Shelf – Mid – High Shelf) <br>Аналоговые фильтры низкого и высокого давления <br>18 уникальных механизмов моделирования динамиков. <br>3 типа Мегафона (Мегафон), Старый компьютер, Мобильный телефон, Винтажный телефон.</span>', '<p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\">SpeakerSim представляет собой реалистичную эмуляцию различных типов динамиков с собственной акустикой и окружением. Этот плагин поможет вам проверить ваш микс в различных системах мониторов, музыкальных произведениях, аудиопост-продукции для телепередач или фильмов.</span></p>', '<p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\">macOS Included: VST3, AU, AAX plug-in versions (64-bit only)\r\nmacOS 10.9.5 or above\r\nVST3 / AU / AAX host\r\nIntel I3 2ghz or above – Native Apple Silicon is also supported\r\n4 GB RAM / 2 GB free space on the system drive\r\nMin. 1024×768 Screen Resolution\r\nAbility to download<br>\r\nWindows Included: VST3, AAX plug-in versions (64-bit only)\r\nWindows 7 64-bit or above\r\nVST3 / AAX host\r\nIntel I3 2ghz / AMD Athlon 64 X2 or above\r\n4 GB RAM / 2 GB free space on the system drive\r\nMin. 1024×768 Screen Resolution\r\nAbility to download</span></p>', 56, 1, 1, 4),
+(85, 'OSL Multi Chorus', '4800', '3900', 32, '3.jpg', '<p><span style=\"color: rgb(51, 51, 51); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: small;\">OSL Multi Chorus — это цифровой эффект, вдохновленный топологией четырех знаковых модулей модуляции. Помимо записи звука оригинального OSL Chorus, этот плагин включает в себя три новых режима, каждый из которых имеет свой характер звука. Каждый режим полностью редактируем, что позволяет создавать эффекты от едва уловимых до экстремальных. Изучите заводские пресеты или настройте свой собственный припев, чтобы мгновенно добавить толщину и ширину любому источнику, включая гитары, ударные, бас, вокал и синтезаторы.</span><br></p>', '<p style=\"list-style: disc; overflow-wrap: break-word; margin: 0px;\"><span class=\"a-list-item\" style=\"overflow-wrap: break-word; display: block;\">OSL Multi Chorus — это цифровой эффект, вдохновленный топологией четырех знаковых модулей модуляции. 4 режима хоруса, расширение стереобазы и середины и многое другое.</span></p>', '<p><span style=\"margin: 0px; padding: 0px; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;\"></span><span style=\"margin: 0px; padding: 0px; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;\"></span><span style=\"margin: 0px; padding: 0px; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;\"> Windows 8–11 – Форматы плагинов: 64-битный VST3. OS X 10.11–macOS 14 — Форматы плагинов: 64-битный VST3/AU (собственный Arm64/M1)</span><br></p>', 111, 0, 1, 1),
 (86, 'Dynamic Delay', '3000', '2600', 32, '1.jpg', '<p style=\"padding: 0px; margin-top: 0px; text-rendering: optimizelegibility; margin-bottom: 0px !important; line-height: 32px !important;\">Dynamic Delay — это именно то, что написано: плагин динамической задержки. Он имеет внутреннюю боковую цепь, которая подавляет громкость генерируемых задержек. Как только входной звук опускается ниже порогового значения, задержки становятся отчетливо слышны. Это трюк, который используют многие профессиональные продюсеры, но его настройка в вашей сигнальной цепи требует времени и обычно требует отдельного компрессора боковой цепи. Dynamic Delay объединяет эту технику в одном простом в использовании плагине, экономя время и деньги. Боковая цепочка — очень полезная техника микширования, позволяющая звукам проникать в микс, делая другие звуки более тихим. Динамическая задержка особенно хороша для вокала, позволяя вокалу действительно проявиться и не конкурировать за пространство с задержанным вокалом. Тишина между вокалами может быть заполнена хорошей задержкой, оставляя исходный вокал чистым и незатронутым задержкой.<br></p>', '<p style=\"padding: 0px; margin-top: 0px; text-rendering: optimizelegibility; margin-bottom: 0px !important; line-height: 32px !important;\"><span id=\"productTitle\" class=\"a-size-large product-title-word-break\" style=\"text-rendering: optimizelegibility; word-break: break-word; line-height: 32px !important; font-family: Roboto;\">Создавайте сложные задержки звучания с индивидуальными таймингами и величиной обратной связи для каждого канала. Встречайте новую задержку. Динамическая задержка начального звука. Имеет высококачественные эффекты, стерео задержку и динамическую задержку.</span></p>', '<p><span style=\"margin: 0px; padding: 0px; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;\"> </span><span style=\"margin: 0px; padding: 0px; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;\">\r\nWindows 7 или выше (64-bit только)\r\n4GB Ram\r\nVST, и AAX Compatible.</span><br></p>', 53, 1, 1, 3),
 (87, 'Pivot', '2100', '1750', 68, '8.jpg', 'Pivot — это мощный эквалайзер наклона, позволяющий быстро изменять спектральный состав вашего звука. Режимы Mid/Side позволяют вам отдельно настраивать стереоконтент вашего звука, позволяя очистить мутные стереобасы или сделать более четкими высокие высокие частоты в ваших мастер-треках. Измените свой вес Pivot — это простой в использовании эквалайзер наклона, позволяющий сдвигать спектральный состав трека вокруг средней точки, как на качелях. Немного тяжеловат бас? Поверните циферблат влево. Высокие частоты немного громкие? Переместите его вправо. Он имеет регулируемый наклон и среднюю точку, чтобы получить точный баланс, который вам нужен. Средний/боковой эквалайзер Наряду с обычной моно- или стереообработкой Pivot предлагает режим Mid/Side. Чтобы сделать ваш основной звук более захватывающим, вы можете сделать боковой канал ярче для более яркого и широкого ощущения или уменьшить уровень стереобаса, упорядочив стереораспространение басовых частот. Легкий Что касается потребления вашего процессора, Pivot не голоден. Вы можете загружать несколько экземпляров на несколько дорожек, не останавливая рабочую станцию. Он также имеет возможность выполнять простое усиление и понижение громкости, что означает, что вы можете заменить свои вялые и неинтуитивные эквалайзеры, когда вам просто нужна быстрая настройка.', 'Pivot — это мощный эквалайзер, позволяющий быстро изменять спектральный состав вашего звука. Pivot — это эквалайзер с регулируемым наклоном и средним/боковым режимами. Мощный эквалайзер, все просто.', 'Windows 8.1+\r\n64-bit VST / VST3 / AAX compatible DAW\r\nMacOS\r\n<br>\r\nOSX 10.9+\r\nApple M1 supported\r\n64-bit VST / VST3 / AU / AAX compatible DAW\r\n<br>\r\nUbuntu\r\n18.04+\r\n64-bit VST / VST3 Compatible DAW', 19, 0, 1, 5),
 (95, 'RealGuitar 6', '23400', '20500', 53, '10.jpg', 'Существует три способа использования виртуального инструмента RealGuitar.<br>Интуитивно понятная раскладка клавиатуры позволяет играть на Live/MIDI-клавиатуре с многочисленными артикуляциями, шумами, специфичными для гитары трюками, приемами игры на клавиатуре и игры пальцами.<br> Любое гитарное исполнение, созданное на MIDI-клавиатуре, можно записать или напрямую запрограммировать на MIDI-дорожке любой DAW. <br>Встроенный секвенсор песен предназначен для аранжировки всей песни путем простой вставки символов аккордов и выбора предварительно записанных гитарных ритм-паттернов.', 'Поднимите свою музыку на новый уровень с помощью невероятно реалистичной виртуальной акустической гитары с более чем 200 аутентичными звуками и полной интеграцией с симуляторами усилителей и пресетами, и все это у вас под рукой с помощью всего 43 клавиш на вашем MIDI-контроллере.', 'MacOS 10.12 Sierra and above<br>\r\nWindows 10 and above (64-bit only)<br>\r\nIntel, AMD, or Apple Silicon CPU<br>\r\n2GB RAM or more<br>\r\n5GB free storage space<br>', 19, 1, 1, 11),
@@ -814,7 +525,7 @@ INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `
 (100, 'Prestige Racks', '12800', '7900', 78, '5.jpg', '<p style=\"padding: 0px; margin-top: 0px; text-rendering: optimizelegibility; margin-bottom: 0px !important; line-height: 32px !important;\"><span id=\"productTitle\" class=\"a-size-large product-title-word-break\" style=\"text-rendering: optimizelegibility; word-break: break-word; line-height: 32px !important;\">Объединение 5 классических моделей эквалайзеров, винтажного аналогового оборудования и многого другого в одном цельном интерфейсе Специальный уникальный эквалайзер, сочетающий в себе лучшие характеристики 5 различных классических популярных моделей эквалайзеров! Британский компрессор полосы каналов Solid 4G. Теплый винтажный аналоговый предусилитель. Подробный Де-эссер с расширенными возможностями. Классические блоки реверберации и задержки с функцией приглушения. Винтажный оптический компрессор и гейт… Представьте себе специальную коллекцию, которая объединяет все эти устройства в одном пользовательском интерфейсе с простой и быстрой функцией переключения маршрутизации. Улучшите свой звук Цель сведения и мастеринга: 8 классических моделей с современными функциями. Переключаемая маршрутизация стойки для быстрого и простого рабочего процесса Более 200 профессиональных пресетов</span></p>', '<p style=\"padding: 0px; margin-top: 0px; text-rendering: optimizelegibility; margin-bottom: 0px !important; line-height: 32px !important;\"><span id=\"productTitle\" class=\"a-size-large product-title-word-break\" style=\"text-rendering: optimizelegibility; word-break: break-word; line-height: 32px !important;\">Представляем вам Prestige Racks! Непревзойденное сочетание вневременных тонов и современных функций. Prestige Racks предлагает вам очень простой и быстрый рабочий процесс, достоверно воспроизводя захватывающие тона классического аналогового оборудования.</span></p>', '<p style=\"padding: 0px; margin-top: 0px; text-rendering: optimizelegibility; margin-bottom: 0px !important; line-height: 32px !important;\"><span id=\"productTitle\" class=\"a-size-large product-title-word-break\" style=\"text-rendering: optimizelegibility; word-break: break-word; line-height: 32px !important;\">Mac Версии плагинов VST3, AU, AAX (только 64-разрядные версии) macOS 10.9.5 или новее Хост VST3/AU/AAX Intel I3 2 ГГц или выше/родной Apple Silicon 4 ГБ ОЗУ / 2 ГБ свободного места на системном диске <br>Windows Включено: версии подключаемых модулей VST3, AAX (только 64-разрядная версия). Windows 7 64-битная или выше Хост VST3/AAX Intel I3 2 ГГц или выше/AMD Athlon 64 X2 или выше 4 ГБ ОЗУ / 2 ГБ свободного места на системном диске</span></p>', 11, 0, 1, 2),
 (101, 'CrushStation', '8800', '4450', 28, '7.jpg', '<p class=\"a-spacing-base\" style=\"padding: 0px; color: rgb(15, 17, 17); font-family: \"Amazon Ember\", Arial, sans-serif; font-size: 14px; margin-bottom: 14px !important;\">CrushStation — это универсальная, лучшая в своем классе платформа стерео искажений для вашего Mac или ПК. Его элементы управления могут изменить ваш тон от сливочного насыщения до брутальной звуковой атаки. Но искажение — это только отправная точка. CrushStation привносит в микс мультиэффекты, добавляя трехполосный эквалайзер, компрессию, Octave Mix и уникальный подход Eventide к неисправному оборудованию — регулятор Sag. Используйте MIX Control, чтобы смешать необработанный сигнал с CrushStation для создания параллельного сжатия, искажения и других творческих эффектов.</p>', '<p style=\"padding: 0px; margin-top: 0px; text-rendering: optimizelegibility; margin-bottom: 0px !important; line-height: 32px !important;\"><span id=\"productTitle\" class=\"a-size-large product-title-word-break\" style=\"text-rendering: optimizelegibility; word-break: break-word; line-height: 32px !important;\">CrushStation — это универсальная, лучшая в своем классе платформа стерео искажений для вашего Mac или ПК. Его элементы управления могут изменить ваш тон от сливочного насыщения до брутальной звуковой атаки. Но искажение — это только отправная точка. CrushStation привносит в микс мультиэффекты, добавляя трехполосный эквалайзер, компрессию, Octave Mix и уникальный подход Eventide к неисправному оборудованию — регулятор Sag.</span></p>', '<p style=\"padding: 0px; margin-top: 0px; text-rendering: optimizelegibility; margin-bottom: 0px !important; line-height: 32px !important;\"><span id=\"productTitle\" class=\"a-size-large product-title-word-break\" style=\"text-rendering: optimizelegibility; word-break: break-word; line-height: 32px !important;\">PC Windows 8 and later (32 / 64bit)\r\nAAX, VST2, VST3 (32 / 64-bit)\r\n<br>MacOS 10.9 and later (64-bit only) (macOS 11 Big Sur only supported on Intel-based Mac systems)\r\nAAX, AU, VST2, VST3 (64-bit)</span></p>', 21, 1, 1, 4),
 (102, 'NEED Preamp and Eq Collection', '31200', '13400', 112, '9.jpg', 'Консольные предусилители и эквалайзеры в британском стиле были самым востребованным оборудованием с первых дней их появления. Queen, Nirvana, Red Hot Chilli Peppers, Дэвид Боуи, Foo Fighters, Slipknot, Metallica, Адель, Дрейк… и т. д. это всего лишь несколько примеров. Они использовались на бесчисленных классических альбомах, ставших платиновыми, а также до сих пор широко используются, что подтверждает статус этих легендарных модулей — столь востребованных классических устройств, которые нужны каждой среде микширования/мастеринга.', 'Bключает в себя 7 выдающихся плагинов предусилителя/эквалайзера в британском стиле! Коллекция предусилителей и эквалайзеров NEED — настоящая жемчужина! Консольные предусилители и эквалайзеры в британском стиле были самым востребованным оборудованием с первых дней их появления.', 'macOSIncluded: VST3, AU, AAX plug-in versions (64-bit only)\r\nmacOS 10.9.5 or above\r\nVST3 / AU / AAX host\r\nIntel I3 2ghz or above – Native Apple Silicon is also supported\r\n4 GB RAM / 2 GB free space on the system drive\r\nMin. 1024×768 Screen Resolution\r\nAbility to download <br>\r\nWindows Included: VST3, AAX plug-in versions (64-bit only)\r\nWindows 7 64-bit or above\r\nVST3 / AAX host\r\nIntel I3 2ghz / AMD Athlon 64 X2 or above\r\n4 GB RAM / 2 GB free space on the system drive\r\nMin. 1024×768 Screen Resolution\r\nAbility to download', 16, 1, 1, 5),
-(104, 'miniVerb', '213', '123', 123, 'product-featured-104.jpg', '<p>sxed</p>', '<p>ewdx</p>', '<p>wedx</p>', 1, 0, 1, 9),
+(104, 'miniVerb', '213', '123', 123, 'product-featured-104.jpg', '<p>sxed</p>', '<p>ewdx</p>', '<p>wedx</p>', 4, 0, 1, 9),
 (105, 'Xhun ZeroBox', '50000', '45000', 10, 'product-featured-105.jpg', '<p>aerfaef</p>', '<p>EWFw</p>', '<p>AFEGRSEвы</p>', 0, 1, 1, 10);
 
 -- --------------------------------------------------------
@@ -1065,36 +776,9 @@ INSERT INTO `tbl_user` (`id`, `full_name`, `email`, `phone`, `password`, `photo`
 (1, 'Administrator', 'admin@mail.com', '7777777777', 'd00f5d5217896fb7fd601412cb890830', 'user-1.png', 'Super Admin', 'Active'),
 (2, 'Christine', 'christine@mail.com', '4444444444', '81dc9bdb52d04dc20036dbd8313ed055', 'user-13.jpg', 'Admin', 'Active');
 
--- --------------------------------------------------------
-
---
--- Структура таблицы `tbl_video`
---
-
-CREATE TABLE `tbl_video` (
-  `id` int NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `iframe_code` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Дамп данных таблицы `tbl_video`
---
-
-INSERT INTO `tbl_video` (`id`, `title`, `iframe_code`) VALUES
-(1, 'Video 1', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/L3XAFSMdVWU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>'),
-(2, 'Video 2', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/sinQ06YzbJI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>'),
-(4, 'Video 3', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ViZNgU-Yt-Y\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>');
-
 --
 -- Индексы сохранённых таблиц
 --
-
---
--- Индексы таблицы `tbl_country`
---
-ALTER TABLE `tbl_country`
-  ADD PRIMARY KEY (`country_id`);
 
 --
 -- Индексы таблицы `tbl_customer`
@@ -1157,12 +841,6 @@ ALTER TABLE `tbl_photo`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `tbl_post`
---
-ALTER TABLE `tbl_post`
-  ADD PRIMARY KEY (`post_id`);
-
---
 -- Индексы таблицы `tbl_product`
 --
 ALTER TABLE `tbl_product`
@@ -1211,20 +889,8 @@ ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `tbl_video`
---
-ALTER TABLE `tbl_video`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT для сохранённых таблиц
 --
-
---
--- AUTO_INCREMENT для таблицы `tbl_country`
---
-ALTER TABLE `tbl_country`
-  MODIFY `country_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
 
 --
 -- AUTO_INCREMENT для таблицы `tbl_customer`
@@ -1266,7 +932,7 @@ ALTER TABLE `tbl_mid_category`
 -- AUTO_INCREMENT для таблицы `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT для таблицы `tbl_page`
@@ -1278,19 +944,13 @@ ALTER TABLE `tbl_page`
 -- AUTO_INCREMENT для таблицы `tbl_payment`
 --
 ALTER TABLE `tbl_payment`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
 -- AUTO_INCREMENT для таблицы `tbl_photo`
 --
 ALTER TABLE `tbl_photo`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT для таблицы `tbl_post`
---
-ALTER TABLE `tbl_post`
-  MODIFY `post_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблицы `tbl_product`
@@ -1339,12 +999,6 @@ ALTER TABLE `tbl_top_category`
 --
 ALTER TABLE `tbl_user`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT для таблицы `tbl_video`
---
-ALTER TABLE `tbl_video`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
